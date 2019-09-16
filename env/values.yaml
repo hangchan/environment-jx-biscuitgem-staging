@@ -22,7 +22,8 @@ jenkins:
 prow: {}
 go-web:
   replicaCount: 3
-  mysql:
+  go-db:
+    fullnameOverride: go-db
     mysqlUser: testing
     mysqlPassword: "foo-foo-foo-foo"
     mysqlRootPassword: "foo-bar-foo-bar"
