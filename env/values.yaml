@@ -20,9 +20,9 @@ jenkins:
   Servers:
     Global: {}
 prow: {}
-mysql:
-  mysqlUser: testing
-  mysqlPassword: "foo-foo-foo-foo"
-  mysqlRootPassword: "foo-bar-foo-bar"
 go-web:
   replicaCount: 3
+  mysql:
+    mysqlUser: testing
+    mysqlPassword: "foo-foo-foo-foo"
+    mysqlRootPassword: "foo-bar-foo-bar"
